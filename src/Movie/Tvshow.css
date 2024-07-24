@@ -1,0 +1,60 @@
+.movie {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.movie .movie-details {
+    text-decoration: none;
+    color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.movie .movie-details:hover {
+    transform: scale(1.05);
+}
+
+.movie .movie-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.movie .movie-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.movie .movie-card:hover img {
+    transform: scale(1.1);
+}
+
+.movie .movie-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.movie .movie-info h4 {
+    margin: 0;
+    font-size: 16px;
+}
+
+.movie .movie-info p {
+    margin: 5px 0 0;
+    font-size: 14px;
+}
+
+.error {
+    color: #e50914;
+    text-align: center;
+    margin-top: 20px;
+}
